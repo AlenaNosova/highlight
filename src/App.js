@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import List from './components/List'
 
 export default function App() {
-    const [list, setList] = useState([
+    const list = [
         {
             type: 'video',
             url: 'https://www.youtube.com/embed/rN6nlNC9WQA?rel=0&amp;controls=0&amp;showinfo=0',
@@ -34,7 +34,7 @@ export default function App() {
             title: 'Кот Бегемот обладает невероятной...',
             views: 12,
         },
-    ]);
+    ];
 
     return (
         <List list={list} />
